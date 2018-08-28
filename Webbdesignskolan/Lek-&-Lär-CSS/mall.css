@@ -1,0 +1,71 @@
+body {
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 22px;
+	text-align: justify;
+	text-indent: 40px;
+	color: #999;
+	background-image: url(twerk.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+}
+.plfyrkant {
+	list-style-type: square;
+}
+.plcirkel {
+	list-style-type: circle;
+}
+.pldisk {
+	list-style-type: disc;
+}
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
+	background-color: #006699;
+	font-style: italic;
+}
+h1 { 
+	font-size: 36px;
+	border-left: 1px groove #003366;
+}
+h2 {
+	font-size: 30px;
+}
+.pb {
+	page-break-after: always;
+}
+div {
+	background-color: #AABB33;
+}
+.tabell {
+	border: 3px double #003366;
+}
+.tabell2 {
+	border-bottom: 3px dashed #003366;
+	border-top: 3px dotted #003366;
+}
+.textp1, .textp2, .textp3 {
+	font-family: sans-serif;
+	font-weight: normal;
+	letter-spacing: 0px;
+}
+.textp1 {
+	color: #6a0ca0;
+	background-color: #FFCC00;
+}
+.textp2 {
+	color: #c4401f;
+	letter-spacing: 5px;
+	line-height: 30px;
+}
+.textp3 {
+	font-size: 1.2ex;
+}
