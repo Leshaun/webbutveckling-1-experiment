@@ -1,0 +1,49 @@
+html {
+    background-color: lightslategrey;
+}
+body {
+    margin: auto;
+    max-width: 500px;
+    padding-bottom: 0.1px; /*knep för div margin */
+	background-color: lightgrey;
+	font-family: sans-serif;
+}
+h1 {
+	text-align: center;
+	color: maroon;
+}
+#billy {
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 1% 1% 1% 1%;
+	color: darkred;
+	margin: 2%;
+}
+#bob {
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 1% 1% 1% 1%;
+	color: darkgreen;
+	margin: 2%;
+}
+#bob > p > a {
+	text-decoration: line-through;
+}
+#bob > .two > a {
+	text-decoration: underline overline;
+	text-decoration-style: double;
+	text-decoration-color: orange;
+}
+p {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.two {
+	font-size: 110%;
+}
+.three {
+	font-size: 81%;
+}
+.three + p {
+	font-weight: bolder;
+}
