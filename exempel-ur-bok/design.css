@@ -1,0 +1,20 @@
+html {
+	background-color: silver;
+}
+body {
+	margin: auto;
+	width: 50%;
+	height: 50%;
+	background-color: orange;
+}
+p {
+	font-family: sans-serif;
+	text-align: center;
+}
+.learn {
+	font-size: large;
+}
+.easy {
+	font-size: small;
+	color: darkred;
+}
