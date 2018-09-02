@@ -5,7 +5,7 @@ body {
     margin: auto;
     max-width: 500px;
     padding-bottom: 0.1px; /*knep för div margin */
-	background-color: lightgrey;
+	background-color: azure;
 	font-family: sans-serif;
 }
 h1 {
@@ -16,6 +16,7 @@ h1 {
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 1% 1% 1% 1%;
+	border-color: purple;
 	color: darkred;
 	margin: 2%;
 }
@@ -23,6 +24,7 @@ h1 {
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 1% 1% 1% 1%;
+	border-color: purple;
 	color: darkgreen;
 	margin: 2%;
 }
@@ -39,11 +41,14 @@ p {
 	margin-right: 2%;
 }
 .two {
-	font-size: 110%;
+	font-size: larger;
 }
 .three {
-	font-size: 81%;
+	font-size: smaller;
 }
 .three + p {
 	font-weight: bolder;
+}
+#bob > .three + p {
+	text-align: justify;
 }
