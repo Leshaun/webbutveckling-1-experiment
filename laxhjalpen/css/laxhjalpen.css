@@ -1,0 +1,84 @@
+@charset "UTF-8";
+html {
+	margin: 2%;
+}
+body {
+	margin: auto;
+	max-width: 860px;
+	font-family: "Helvetica Neue", "Liberation Sans", Calibri, Arial, sans-serif;
+	font-size: 100%;
+}
+header {
+	text-align: center;
+}
+footer {
+	margin-top: 3em;
+	text-align: center;
+	color: #999;
+}
+h1 {
+	font-family: "Merienda One", cursive;
+}
+/*
+section, header, footer {
+	outline: 1px solid red;
+}
+*/
+.tagline {
+	font-size: 120%;
+	padding: 0.5em;
+	border-top: 3px double #00AF64;
+	border-bottom: 3px double #00AF64;
+	margin: 1em 0;
+}
+.startpage {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.hwrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.menu > h2 {
+	margin: 0 0 1em;
+	padding: 2em 0;
+	background-color: #F5F5F5;
+	text-align: center;
+	box-shadow: inset 0 0 20px #007241;
+	border-radius: 50%;
+	font-family: "Merienda One", cursive;
+}
+.hwrap > a {
+	margin-right: 30px;
+}
+.startpage h1 {
+	font-size: 500%;
+}
+.startpage .logo {
+	width: 235px;
+	height: 198px;
+}
+.startpage header, .startpage footer {
+	flex: 0 0 100%;
+}
+.startpage section {
+	flex: 0 0 22%;
+}
+h1::first-Letter {
+	color: #00AF64;
+}
+.menu a:link, .menu a:visited {
+	text-decoration: none;
+	color: #000;
+}
+.menu a:focus, .menu a:hover {
+	text-decoration: underline;
+	color: #A62F00;
+}
+.menu a:active {
+	text-decoration: underline;
+	color: #FF4900;
+}
