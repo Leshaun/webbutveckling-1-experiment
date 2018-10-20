@@ -19,6 +19,34 @@ footer {
 h1 {
 	font-family: 'Merienda One', cursive;
 }
+article {
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	border-bottom: 3px double #00af64;
+}
+article:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+figure {
+	float: left;
+	margin: 0;
+}
+figure img {
+	width: 128px;
+	height: 128px;
+}
+figcaption {
+	font: italic bolder 110% sans-serif;
+	font-family: inherit;
+	text-align: center;
+	text-transform: uppercase;
+	color: #666;
+}
+article p {
+	margin-left: 140px;
+	hyphens: auto;
+}
 /*
 section, header, footer {
 	outline: 1px solid red;
@@ -42,7 +70,19 @@ section, header, footer {
 	align-items: center;
 	justify-content: center;
 }
-.menu > h2 {
+.menu {
+	margin: 1em 0;
+	padding: 0;
+}
+.dborder {
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+.menu li {
+	margin: 0 0 1rem;
+	list-style: none;
+}
+.menu > li, .menu > h2 {
 	margin: 0 0 1em;
 	padding: 2em 0;
 	background-color: #F5F5F5;
@@ -53,6 +93,9 @@ section, header, footer {
 }
 .hwrap > a {
 	margin-right: 30px;
+}
+h1 > span {
+	color: #a62f00;
 }
 .startpage h1 {
 	font-size: 500%;
@@ -66,6 +109,31 @@ section, header, footer {
 }
 .startpage section {
 	flex: 0 0 22%;
+}
+.subpage {
+	display: flex;
+	flex-wrap: wrap;
+}
+.subpage .logo {
+	width: 146px;
+	height: 123px;
+}
+.subpage h1 {
+	font-size: 2.6rem;
+}
+.subpage .hwrap {
+	justify-content: space-between;
+}
+.subpage header, .subpage footer {
+	flex: 0 0 100%;
+}
+.subpage .hwrap > a, nav {
+	flex: 0 1 20%;
+	min-width: 146px;
+	margin-right: 30px;
+}
+.subpage .hwrap > h1, div[role=main] {
+	flex: 1 1 300px;
 }
 h1::first-Letter {
 	color: #00AF64;
