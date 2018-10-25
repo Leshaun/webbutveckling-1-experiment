@@ -19,6 +19,12 @@ footer {
 h1 {
 	font-family: 'Merienda One', cursive;
 }
+h1 > span {
+	color: #a62f00;
+}
+h1::first-Letter {
+	color: #00AF64;
+}
 article {
 	padding-bottom: 1em;
 	margin-bottom: 2em;
@@ -27,6 +33,10 @@ article {
 article:last-child {
 	border-bottom: none;
 	margin-bottom: 0;
+}
+article p {
+	margin-left: 140px;
+	hyphens: auto;
 }
 figure {
 	float: left;
@@ -43,9 +53,41 @@ figcaption {
 	text-transform: uppercase;
 	color: #666;
 }
-article p {
-	margin-left: 140px;
-	hyphens: auto;
+table {
+	border-spacing: 0;
+	border: 1px solid #d3d3d3;
+	width: 96%;
+	margin: 1em auto 2em;
+	border-radius: 5px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+thead {
+	font-size: 150%;
+	text-shadow: #fff 1px 1px 1px;
+}
+th, td {
+	padding: 1.1rem 1.8rem 1.1rem;
+}
+th {
+	padding-top: 1.4rem;
+	background: #ddd;
+	text-align: left;
+}
+th:not(:last-child) {
+	border-right: 1px solid #f2f2f2;
+}
+td {
+	border-top: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+}
+tr {
+	transition: background-color 1s;
+}
+tr:target {
+	background-color: #61d7a4;
+}
+tr:hover {
+	background-color: #ff9b73;
 }
 /*
 section, header, footer {
@@ -94,9 +136,6 @@ section, header, footer {
 .hwrap > a {
 	margin-right: 30px;
 }
-h1 > span {
-	color: #a62f00;
-}
 .startpage h1 {
 	font-size: 500%;
 }
@@ -134,9 +173,6 @@ h1 > span {
 }
 .subpage .hwrap > h1, div[role=main] {
 	flex: 1 1 300px;
-}
-h1::first-Letter {
-	color: #00AF64;
 }
 .menu a:link, .menu a:visited {
 	text-decoration: none;
