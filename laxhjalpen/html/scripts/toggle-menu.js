@@ -1,12 +1,15 @@
 (function () {
-    "use strict";
-    // Skapa knappen som visar/döljer menyn
-    // Lagra åtkomst till knappen i en variabel
-    // Lagra åtkonst till menyn i en variabel
-    // När någon klickar på knappen
-        // Om menyn redan visas
-            // Ska den döljas
-            // Och ändra knappens text
-            // Annars ska den visas
-            // Och knappens text ändras
+	"use strict";
+	$(".tagline").html("<button>Visa menyn</button>");
+	var button = $(".tagline > button");
+	var menu = $(".menu");
+	button.click(function () {
+		if ( menu.hasClass("show") ) {
+			menu.removeClass("show");
+			button.html("Visa menyn");
+		} else {
+			menu.addClass("show");
+			button.html("Dölj menyn");
+		}
+	});
 }());
